@@ -1,0 +1,34 @@
+.foodList{
+    flex-grow:1;//独占剩下的空间
+    
+    font-size: 14PX;
+    padding: 10PX;
+    .foodList_for{
+        .foodList_item{
+            flex-grow:1;//独占剩下的空间
+
+            display: flex;
+            flex-direction: row;
+            margin-top: 15PX;
+            .foodList_item_img{
+                width: 80PX;
+                height: 80PX;
+                border-radius: 4PX;
+            }
+            .foodList_item_info{
+                position: relative;
+                flex-grow:1;//独占剩下的空间
+
+                display: flex;
+                flex-direction: column;
+                height: 80PX;
+                justify-content:space-between;//主轴对齐方式：两端对齐
+                margin-left: 10PX;
+                .price{
+                    color:red;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

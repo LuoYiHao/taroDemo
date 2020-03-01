@@ -1,0 +1,35 @@
+.head{
+    .bg{
+        width: 100%;
+        height: 150PX;//像素必须用大写的PX，否则会自动转换成rem
+        filter:blur(6PX);//毛玻璃效果
+    }
+    .store{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10PX;
+        .store_img{
+            width: 80PX;
+            height: 80PX;
+            border-radius: 6PX;
+            z-index:2;//兼容小程序
+        }
+        margin-top: -100PX;
+    }
+    .store_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;//主轴对齐方式：两端对齐
+        font-size: 18PX;
+        margin-left: 10PX;
+        z-index:2;
+        color: white;
+        .store_tags{
+            border:1PX solid greenyellow;
+            padding: 2PX 4PX;
+            font-size: 12PX;
+            border-radius: 8PX;
+            margin-right: 5PX;
+        }
+    }
+}

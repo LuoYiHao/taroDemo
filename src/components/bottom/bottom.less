@@ -1,0 +1,66 @@
+.bottom{
+    width: 100%;
+    position: fixed;
+    bottom: 10PX;
+    left:0;
+    font-size: 14PX;
+    height: 60PX;//垂直居中
+
+    display: flex;
+    justify-content: center;//单个元素居中
+
+    .bottom_body{
+        width: 90%;
+        height: 60PX;//垂直居中
+        background: #3a3b36;
+        color:#89888d;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 80PX;
+        padding: 0 10PX;
+        .num{
+            margin-top: -20PX;
+            margin-left: 63PX;
+            border-radius: 50%;//圆形
+            width: 20PX;
+            height: 20PX;
+            line-height: 20PX;//垂直居中
+            text-align: center;//水平居中
+            position: absolute;//脱离文档流
+            color: white;
+            background: red;
+            z-index: 2;//置于顶层
+        }
+        .img{
+            width: 60PX;
+            height: 60PX;
+            margin-top: -20PX;
+            margin-left: 15PX;
+        }
+        .info{
+            height: 60PX;
+            line-height: 60PX;//垂直居中
+            .price{
+                font-size: 20PX;
+                color:white;
+                font-weight: bold;
+            }
+        }
+        .submit{
+            height: 60PX;
+            line-height: 60PX;//垂直居中
+            .goPay{
+                font-size: 16PX;
+                background: #f4ea2a;
+                color:black;
+                height: 100%;
+                display: block;
+                width: 100PX;
+                text-align: center;
+                border-radius: 0 50PX 50PX 0;
+                margin-right: -12PX;
+            }
+        }
+    }
+}
